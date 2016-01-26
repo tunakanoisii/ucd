@@ -1,0 +1,145 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+header{
+  position: relative;
+  top:0;
+  width: 100%;
+  height: 50px;
+}
+
+footer{
+  display: block;
+  clear: both;
+  position: relative;
+  bottom: 0;
+  margin-top: 30px; 
+  width: 100%;
+  height: 100px;
+}
+
+footer p{
+  position: relative;
+  bottom: 0;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#site{
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: 100%;
+}
+
+#main{
+  position: relative;
+  width: 960px;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+#main p a{
+  color: #DC143C;
+  text-decoration: underline;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.modal-link{
+  display: block;
+  float: left;
+  margin: 5px 5px;
+  width: 310px;
+  height: auto;
+  background-color: #fff;
+}
+
+.modal-link img{
+  width: 100%;
+  height: auto;
+
+  -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    -ms-transition: 0.8s;
+    transition: 0.8s;
+}
+
+.modal-link img:hover {
+  cursor: pointer ;
+  background-color: #a9a9a9;
+  opacity: 0.5;
+}
+
+.modal-contents{
+  position: fixed;
+  margin: 0;
+  z-index: 2;
+  display: none;
+
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.modal-contents img{
+  margin: 30px;
+  width: 440px;
+  height: auto;
+
+  background-color: #666;
+}
+
+.modal-overlay{
+  z-index: 1;
+  display: none; /*最初は表示しない*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/*.clearfix{display: inline-block;} 
+
+/* Hides from IE Mac \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
